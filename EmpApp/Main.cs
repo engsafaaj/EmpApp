@@ -37,7 +37,7 @@ namespace EmpApp
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-            var result = MessageBox.Show("هل انت متأكد من هذة الاجراء", "اجراء حذف", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            var result = MessageBox.Show("هل انت متأكد من هذا الإجراء؟", "اجراء حذف", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 int Id = Convert.ToInt32(dataGridViewEmployees.CurrentRow.Cells[0].Value);
